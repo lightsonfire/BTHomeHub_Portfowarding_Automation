@@ -39,7 +39,9 @@
             this.supportLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.futureUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.supportTheDevelopersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lisWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aevvsWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +49,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
-            this.helpToolStripMenuItem1});
+            this.helpToolStripMenuItem1,
+            this.supportTheDevelopersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(435, 24);
@@ -122,23 +125,38 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // tbPassword
+            // supportTheDevelopersToolStripMenuItem
             // 
-            this.tbPassword.Location = new System.Drawing.Point(12, 27);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(100, 20);
-            this.tbPassword.TabIndex = 2;
+            this.supportTheDevelopersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lisWebsiteToolStripMenuItem,
+            this.aevvsWebsiteToolStripMenuItem});
+            this.supportTheDevelopersToolStripMenuItem.Name = "supportTheDevelopersToolStripMenuItem";
+            this.supportTheDevelopersToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.supportTheDevelopersToolStripMenuItem.Text = "Support The Developers";
+            this.supportTheDevelopersToolStripMenuItem.Click += new System.EventHandler(this.supportTheDevelopersToolStripMenuItem_Click);
+            // 
+            // lisWebsiteToolStripMenuItem
+            // 
+            this.lisWebsiteToolStripMenuItem.Name = "lisWebsiteToolStripMenuItem";
+            this.lisWebsiteToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.lisWebsiteToolStripMenuItem.Text = "li\'s Website";
+            // 
+            // aevvsWebsiteToolStripMenuItem
+            // 
+            this.aevvsWebsiteToolStripMenuItem.Name = "aevvsWebsiteToolStripMenuItem";
+            this.aevvsWebsiteToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.aevvsWebsiteToolStripMenuItem.Text = "Aevv\'s Website";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 405);
-            this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -159,7 +177,9 @@
         private System.Windows.Forms.ToolStripMenuItem supportLogToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem futureUpdatesToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.ToolStripMenuItem supportTheDevelopersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lisWebsiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aevvsWebsiteToolStripMenuItem;
     }
 }
 
