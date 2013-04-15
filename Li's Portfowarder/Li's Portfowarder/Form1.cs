@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Li_Port_Foward.Web;
 
 namespace WindowsFormsApplication1
 {
@@ -19,6 +20,12 @@ namespace WindowsFormsApplication1
         private void toolStripTextBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeHub hh = new HomeHub();
+            hh.login(tbPassword.Text);
         }
     }
 }
