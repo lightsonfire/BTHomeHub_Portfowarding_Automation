@@ -10,4 +10,15 @@ it will be freeware and ANYONE can use my software.
 
 Thanks.
 
-*/www.liam.pro*/.
+*/www.liam.pro*/
+
+--------------------------------------------
+
+Changelog
+
+15th april 2013
+       -
+Updated and added README.MD (github)
+Project design started, Will create GUI first.
+
+--------------------------------------------
