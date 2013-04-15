@@ -24,12 +24,6 @@ namespace WindowsFormsApplication1
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HomeHub hh = new HomeHub();
-            hh.login(tbPassword.Text);
-        }
-
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -42,5 +36,27 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void lisWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            HomeHub hh = new HomeHub();
+            hh.login(tbPassword.Text);
+        }
+
+        private void tbPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

@@ -38,10 +38,11 @@
             this.changelogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supportLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.futureUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.supportTheDevelopersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lisWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aevvsWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,14 +70,14 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.helpToolStripMenuItem.Text = "Exit";
             // 
             // helpToolStripMenuItem1
@@ -121,10 +122,6 @@
             this.futureUpdatesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.futureUpdatesToolStripMenuItem.Text = "Future Updates";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // supportTheDevelopersToolStripMenuItem
             // 
             this.supportTheDevelopersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -133,7 +130,6 @@
             this.supportTheDevelopersToolStripMenuItem.Name = "supportTheDevelopersToolStripMenuItem";
             this.supportTheDevelopersToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.supportTheDevelopersToolStripMenuItem.Text = "Support The Developers";
-            this.supportTheDevelopersToolStripMenuItem.Click += new System.EventHandler(this.supportTheDevelopersToolStripMenuItem_Click);
             // 
             // lisWebsiteToolStripMenuItem
             // 
@@ -147,15 +143,29 @@
             this.aevvsWebsiteToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.aevvsWebsiteToolStripMenuItem.Text = "Aevv\'s Website";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 405);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "t";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -180,6 +190,7 @@
         private System.Windows.Forms.ToolStripMenuItem supportTheDevelopersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lisWebsiteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aevvsWebsiteToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
