@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Li's Portfowarder", "Li's Portfowarder\Li's Portfowarder.csproj", "{D1F25825-7C01-48E9-B8E7-B661B30CBBBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liportfoward", "Li's Portfowarder\liportfoward.csproj", "{D1F25825-7C01-48E9-B8E7-B661B30CBBBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

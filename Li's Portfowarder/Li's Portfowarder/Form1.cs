@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Li_Port_Foward.Web;
+using System.Diagnostics;
 
 namespace WindowsFormsApplication1
 {
@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,11 +49,56 @@ namespace WindowsFormsApplication1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            HomeHub hh = new HomeHub();
-            hh.login(tbPassword.Text);
+
         }
 
-        private void tbPassword_TextChanged(object sender, EventArgs e)
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Closes the Application
+            Application.Exit();
+        }
+
+        private void wikiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changelogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void updateLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lisWebsiteToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("www.liam.pro");
+        }
+
+        private void aevvsWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("www.Ulse.net");
+        }
+
+        private void liscenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
