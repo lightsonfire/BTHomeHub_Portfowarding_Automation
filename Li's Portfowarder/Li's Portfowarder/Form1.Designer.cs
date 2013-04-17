@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace Li_Port_Foward
 {
     partial class Form1
     {
@@ -38,13 +38,13 @@
             this.wikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changelogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liscenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supportTheDevelopersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lisWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aevvsWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.liscenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -129,23 +130,30 @@
             // wikiToolStripMenuItem
             // 
             this.wikiToolStripMenuItem.Name = "wikiToolStripMenuItem";
-            this.wikiToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wikiToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.wikiToolStripMenuItem.Text = "Wiki";
             this.wikiToolStripMenuItem.Click += new System.EventHandler(this.wikiToolStripMenuItem_Click);
             // 
             // changelogToolStripMenuItem
             // 
             this.changelogToolStripMenuItem.Name = "changelogToolStripMenuItem";
-            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.changelogToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.changelogToolStripMenuItem.Text = "Change Log";
             this.changelogToolStripMenuItem.Click += new System.EventHandler(this.changelogToolStripMenuItem_Click);
             // 
             // updateLogToolStripMenuItem
             // 
             this.updateLogToolStripMenuItem.Name = "updateLogToolStripMenuItem";
-            this.updateLogToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateLogToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.updateLogToolStripMenuItem.Text = "Update Log";
             this.updateLogToolStripMenuItem.Click += new System.EventHandler(this.updateLogToolStripMenuItem_Click);
+            // 
+            // liscenceToolStripMenuItem
+            // 
+            this.liscenceToolStripMenuItem.Name = "liscenceToolStripMenuItem";
+            this.liscenceToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.liscenceToolStripMenuItem.Text = "License";
+            this.liscenceToolStripMenuItem.Click += new System.EventHandler(this.liscenceToolStripMenuItem_Click);
             // 
             // supportTheDevelopersToolStripMenuItem
             // 
@@ -159,14 +167,14 @@
             // lisWebsiteToolStripMenuItem
             // 
             this.lisWebsiteToolStripMenuItem.Name = "lisWebsiteToolStripMenuItem";
-            this.lisWebsiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.lisWebsiteToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.lisWebsiteToolStripMenuItem.Text = "li\'s Website";
             this.lisWebsiteToolStripMenuItem.Click += new System.EventHandler(this.lisWebsiteToolStripMenuItem_Click_1);
             // 
             // aevvsWebsiteToolStripMenuItem
             // 
             this.aevvsWebsiteToolStripMenuItem.Name = "aevvsWebsiteToolStripMenuItem";
-            this.aevvsWebsiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aevvsWebsiteToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.aevvsWebsiteToolStripMenuItem.Text = "aevv\'s Website";
             this.aevvsWebsiteToolStripMenuItem.Click += new System.EventHandler(this.aevvsWebsiteToolStripMenuItem_Click);
             // 
@@ -178,10 +186,18 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Use Profile";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Teamspeak",
+            "Teamspeak 2",
+            "Teamspeak 3",
+            "CS:GO",
+            "Mumble",
+            "Ventrilo"});
             this.comboBox1.Location = new System.Drawing.Point(12, 45);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(168, 21);
@@ -197,13 +213,6 @@
             this.label2.Size = new System.Drawing.Size(90, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Port Profiles\r\n";
-            // 
-            // liscenceToolStripMenuItem
-            // 
-            this.liscenceToolStripMenuItem.Name = "liscenceToolStripMenuItem";
-            this.liscenceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.liscenceToolStripMenuItem.Text = "License";
-            this.liscenceToolStripMenuItem.Click += new System.EventHandler(this.liscenceToolStripMenuItem_Click);
             // 
             // textBox4
             // 
@@ -324,17 +333,27 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 111);
+            this.label5.Location = new System.Drawing.Point(37, 101);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 31;
             this.label5.Text = "Port Scanner";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 258);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(98, 34);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "Check Port";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 405);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
@@ -403,6 +422,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button3;
     }
 }
 
